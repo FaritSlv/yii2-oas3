@@ -7,7 +7,7 @@
         "php": ">=7.4",
         "yiisoft/yii2": "~2.0",
         "ext-json": "*",
-        "zircote/swagger-php": "*",
+        "zircote/swagger-php": "4.*",
         "bower-asset/swagger-ui": "*"
     },
     "license": "MIT",
