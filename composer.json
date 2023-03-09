@@ -4,11 +4,11 @@
     "keywords": ["open-api","swagger","rest", "restfull", "json", "yii2"],
     "type": "library",
     "require": {
-        "php": ">=7.1",
+        "php": ">=7.4",
         "yiisoft/yii2": "~2.0",
         "ext-json": "*",
-        "zircote/swagger-php": "^3.0",
-        "bower-asset/swagger-ui": "^3.20"
+        "zircote/swagger-php": "*",
+        "bower-asset/swagger-ui": "*"
     },
     "license": "MIT",
     "authors": [
