@@ -40,7 +40,7 @@ class JsonAction extends Action
 
         Yii::$app->response->format = Response::FORMAT_JSON;
 
-        return \OpenApi\scan($this->dirs, $this->scanOptions);
+        return \OpenApi\Generator::scan($this->dirs, $this->scanOptions);
     }
 
     /**
