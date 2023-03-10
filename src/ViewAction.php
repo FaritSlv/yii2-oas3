@@ -21,6 +21,8 @@ class ViewAction extends Action
      * Open Api Swagger Json URL
      */
     public $apiJsonUrl;
+    
+    public $uiLayout = 'StandaloneLayout';
 
     /**
      * Action runner
@@ -32,6 +34,7 @@ class ViewAction extends Action
 
         return $this->controller->view->renderFile(__DIR__ . '/view.php', [
             'apiJsonUrl' => $this->apiJsonUrl,
+            'uiLayout' => $this->uiLayout,
         ], $this->controller);
     }
 }
