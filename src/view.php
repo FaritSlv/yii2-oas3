@@ -40,7 +40,7 @@ Assets::register($this);
             plugins: [
                 SwaggerUIBundle.plugins.DownloadUrl
             ],
-            layout: "<?= uiLayout; ?>"
+            layout: "<?= $uiLayout; ?>"
         });
         window.ui = ui
     }
