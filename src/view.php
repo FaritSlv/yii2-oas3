@@ -4,7 +4,6 @@
  * Yii2 php swagger module
  *
  * @author    Simon Rodin <master@genx.ru>
- * @author Stefano Mtangoo <mwinjilisti@gmail.com>
  * @license   http://opensource.org/licenses/MIT MIT Public
  * @link      https://github.com/genxoft/yii2-oas3
  *
@@ -40,12 +39,12 @@ Assets::register($this);
                 deepLinking: true,
                 presets: [
                     SwaggerUIBundle.presets.apis,
-                    SwaggerUIStandalonePreset
+                    <?= empty($uiLayout) ? 'undefined' : 'SwaggerUIStandalonePreset' ?>,
                 ],
                 plugins: [
                     SwaggerUIBundle.plugins.DownloadUrl
                 ],
-                layout: "<?= $uiLayout; ?>"
+                <?= empty($uiLayout) ? '' : "layout: '$uiLayout'" ?>
             });
             window.ui = ui
         }

@@ -4,7 +4,6 @@
  * Yii2 php swagger module
  *
  * @author    Simon Rodin <master@genx.ru>
- * @author Stefano Mtangoo <mwinjilisti@gmail.com>
  * @license   http://opensource.org/licenses/MIT MIT Public
  * @link      https://github.com/genxoft/yii2-oas3
  *
