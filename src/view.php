@@ -1,8 +1,10 @@
 <?php
+
 /**
  * Yii2 php swagger module
  *
  * @author    Simon Rodin <master@genx.ru>
+ * @author Stefano Mtangoo <mwinjilisti@gmail.com>
  * @license   http://opensource.org/licenses/MIT MIT Public
  * @link      https://github.com/genxoft/yii2-oas3
  *
@@ -11,12 +13,14 @@
 /** @var string $apiJsonUrl */
 
 use genxoft\swagger\Assets;
+
 Assets::register($this);
 
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
+
 <head>
     <meta charset="UTF-8">
     <title>Swagger UI</title>
@@ -24,29 +28,31 @@ Assets::register($this);
 </head>
 
 <body style="margin:0;">
-<?php $this->beginBody() ?>
-<div id="swagger-ui"></div>
-<script>
-    window.onload = function() {
-        // Begin Swagger UI call region
-        let ui = SwaggerUIBundle({
-            url: '<?= $apiJsonUrl; ?>',
-            dom_id: '#swagger-ui',
-            deepLinking: true,
-            presets: [
-                SwaggerUIBundle.presets.apis,
-                SwaggerUIStandalonePreset
-            ],
-            plugins: [
-                SwaggerUIBundle.plugins.DownloadUrl
-            ],
-            layout: "<?= $uiLayout; ?>"
-        });
-        window.ui = ui
-    }
-</script>
+    <?php $this->beginBody() ?>
+    <div id="swagger-ui"></div>
+    <script>
+        window.onload = function() {
+            // Begin Swagger UI call region
+            let ui = SwaggerUIBundle({
+                url: '<?= $apiJsonUrl; ?>',
+                oauth2RedirectUrl: '<?= $oauth2RedirectUrl; ?>',
+                dom_id: '#swagger-ui',
+                deepLinking: true,
+                presets: [
+                    SwaggerUIBundle.presets.apis,
+                    SwaggerUIStandalonePreset
+                ],
+                plugins: [
+                    SwaggerUIBundle.plugins.DownloadUrl
+                ],
+                layout: "<?= $uiLayout; ?>"
+            });
+            window.ui = ui
+        }
+    </script>
 
-<?php $this->endBody() ?>
+    <?php $this->endBody() ?>
 </body>
+
 </html>
 <?php $this->endPage() ?>
