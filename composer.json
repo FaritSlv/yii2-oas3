@@ -1,5 +1,5 @@
 {
-    "name": "genxoft/yii2-oas3",
+    "name": "farit-slv/yii2-oas3",
     "description": "Yii2 Open Api Swagger 3 integration",
     "keywords": ["open-api","swagger","rest", "restfull", "json", "yii2"],
     "type": "library",
@@ -16,11 +16,15 @@
             "name": "Simon Rodin",
             "homepage": "http://rodin.red/",
             "email": "master@genx.ru"
+        },
+        {
+            "name": "FaritSlv",
+            "email": "faritslv@github.loc"
         }
     ],
     "autoload": {
         "psr-4": {
-            "genxoft\\swagger\\": "src/"
+            "faritslv\\swagger\\": "src/"
         }
     },
     "minimum-stability": "stable"
