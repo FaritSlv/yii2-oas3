@@ -8,7 +8,7 @@
  *
  */
 
-namespace genxoft\swagger;
+namespace faritslv\swagger;
 
 use yii\web\AssetBundle;
 use yii\web\View;

@@ -11,7 +11,7 @@
 
 /** @var string $apiJsonUrl */
 
-use genxoft\swagger\Assets;
+use faritslv\swagger\Assets;
 
 Assets::register($this);
 

@@ -12,13 +12,13 @@ Installation
 The preferred way to install this wrapper is through [composer](http://getcomposer.org/download/).
 
 ```bash
-php composer.phar require genxoft/yii2-oas3 "*"
+php composer.phar require faritslv/yii2-oas3 "*"
 ```
 
 or
 
 ```bash
-composer require genxoft/yii2-oas3 "*"
+composer require faritslv/yii2-oas3 "*"
 ```
 
 or add to the require section of `composer.json`

@@ -9,7 +9,7 @@
  *
  */
 
-namespace genxoft\swagger;
+namespace faritslv\swagger;
 
 use Yii;
 use yii\base\Action;
