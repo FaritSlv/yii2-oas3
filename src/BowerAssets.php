@@ -13,22 +13,24 @@ namespace faritslv\swagger;
 use yii\web\AssetBundle;
 use yii\web\View;
 
-class Assets extends AssetBundle
+class BowerAssets extends AssetBundle
 {
-    public $sourcePath = '@bower/swagger-ui/dist';
-    
+    public $sourcePath = '@bower';
+
     public $js = [
-        'swagger-ui-bundle.js',
-        'swagger-ui-standalone-preset.js',
+        'swagger-ui/dist/swagger-ui-bundle.js',
+        'swagger-ui/dist/swagger-ui-standalone-preset.js',
     ];
-    
+
     public $jsOptions = [
         'position' => View::POS_HEAD,
     ];
-    
+
     public $css = [
         [
-            'swagger-ui.css',
+            'swagger-ui/dist/swagger-ui.css',
+            'font-roboto/dist/styles/roboto.min.css',
+            'montserrat-webfont/css/montserrat-webfont.min.css',
             'media' => 'screen, print',
         ],
     ];

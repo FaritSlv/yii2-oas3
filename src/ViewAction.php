@@ -25,6 +25,7 @@ class ViewAction extends Action
     public $oauth2RedirectUrl;
 
     public $uiLayout = 'StandaloneLayout';
+    public $useReDoc = false;
 
     /**
      * Action runner
@@ -33,8 +34,9 @@ class ViewAction extends Action
     public function run()
     {
         Yii::$app->getResponse()->format = Response::FORMAT_HTML;
-
-        return $this->controller->view->renderFile(__DIR__ . '/view.php', [
+        $fileSuffix = $this->useReDoc ? '_redoc' : '';
+        
+        return $this->controller->view->renderFile(__DIR__ . '/view' . $fileSuffix . '.php', [
             'apiJsonUrl' => $this->apiJsonUrl,
             'oauth2RedirectUrl' => $this->oauth2RedirectUrl,
             'uiLayout' => $this->uiLayout,

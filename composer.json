@@ -8,7 +8,9 @@
         "yiisoft/yii2": "~2.0",
         "ext-json": "*",
         "zircote/swagger-php": "4.*",
-        "bower-asset/swagger-ui": "*"
+        "bower-asset/swagger-ui": "*",
+        "bower-asset/font-roboto": "^0.0.2",
+        "bower-asset/montserrat-webfont": "^1.0"
     },
     "license": "MIT",
     "authors": [

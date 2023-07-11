@@ -11,9 +11,9 @@
 
 /** @var string $apiJsonUrl */
 
-use faritslv\swagger\Assets;
+use faritslv\swagger\BowerAssets;
 
-Assets::register($this);
+BowerAssets::register($this);
 
 ?>
 <?php $this->beginPage() ?>
