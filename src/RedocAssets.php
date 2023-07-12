@@ -15,7 +15,7 @@ use yii\web\View;
 
 class RedocAssets extends AssetBundle
 {
-    public $sourcePath = '@farit-slv/swagger/assets';
+    public $sourcePath = '@faritslv/swagger/assets';
     
     public $js = [
         ['position' => View::POS_END, 'src' => 'js/redoc.standalone.js'],
