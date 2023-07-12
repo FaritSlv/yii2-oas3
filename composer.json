@@ -2,7 +2,7 @@
     "name": "farit-slv/yii2-oas3",
     "description": "Yii2 Open Api Swagger 3 integration",
     "keywords": ["open-api","swagger","rest", "restfull", "json", "yii2"],
-    "type": "library",
+    "type": "yii2-extension",
     "require": {
         "php": ">=7.4",
         "yiisoft/yii2": "~2.0",
