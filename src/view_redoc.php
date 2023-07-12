@@ -45,10 +45,6 @@ RedocAssets::register($this);
     Redoc element with link to your OpenAPI definition
     -->
     <redoc spec-url="<?= $apiJsonUrl; ?>"></redoc>
-    <!--
-    Link to Redoc JavaScript on CDN for rendering standalone element
-    -->
-    <script src="https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js"></script>
     <?php $this->endBody() ?>
 </body>
 
