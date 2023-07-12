@@ -3,7 +3,7 @@ Open Api Swagger 3 for Yii2 Framework
 
 Requirements
 ------------
- - PHP 7.1
+ - PHP 7.4
  - Yii2 Framework
 
 Installation
@@ -12,19 +12,19 @@ Installation
 The preferred way to install this wrapper is through [composer](http://getcomposer.org/download/).
 
 ```bash
-php composer.phar require genxoft/yii2-oas3 "*"
+php composer.phar require farit-slv/yii2-oas3 "*"
 ```
 
 or
 
 ```bash
-composer require genxoft/yii2-oas3 "*"
+composer require farit-slv/yii2-oas3 "*"
 ```
 
 or add to the require section of `composer.json`
 
 ```
-"genxoft/yii2-oas3" : "*"
+"farit-slv/yii2-oas3" : "*"
 ```
 
 Integration
